@@ -161,7 +161,7 @@ blogButton.on(Events.MouseOut, function() {
 });
 blogButton.on(Events.Click, function() {
   var link = document.createElement("a");
-  link.setAttribute("href", "https://john-blog.herokuapp.com");
+  link.setAttribute("href", "http://blog.johnjlee.me/");
   link.click();
 });
 
