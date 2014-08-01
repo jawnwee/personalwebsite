@@ -162,6 +162,12 @@ blogButton.on(Events.MouseOut, function() {
     curve: curveButton
   });
 });
+blogButton.on(Events.Click, function() {
+  var link = document.createElement("a");
+  link.setAttribute("href", "https://john-blog.herokuapp.com");
+  link.click();
+});
+
 
 internetHighlighted.on(Events.MouseOver, function() {
   internetHighlighted.opacity = 1.0;
