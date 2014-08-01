@@ -17,8 +17,6 @@ fullResume = PSD.fullResumeButton;
 exitResume = PSD.Exit;
 
 notReady = new Layer({
-  x: 0,
-  y: 0,
   width: 350,
   height: 180,
   scale: 0,
@@ -26,13 +24,13 @@ notReady = new Layer({
   backgroundColor: "#28acff",
   color: "white"
 });
+notReady.center()
 notReady.style = {
   "font-size": "30px",
   "text-align": "center",
   "line-height": "60px"
 }
 notReady.html = 'Resume is not ready yet :(... An amazing one coming soon';
-notReady.center()
 
 resume.scale = 0.0;
 dimmingView.opacity = 0.0;
@@ -41,14 +39,13 @@ emailHighlighted.opacity = 0.0;
 phoneHighlighted.opacity = 0.0;
 twitterHighlighted.opacity = 0.0;
 
-curveButton = "spring(150,100,40)"
 
 resumeButton.on(Events.MouseOver, function() {
   return resumeButton.animate({
     properties: {
       scale: 1.2
     },
-    curve: curveButton
+    curve: 'spring'
   });
 });
 resumeButton.on(Events.MouseOut, function() {
@@ -56,7 +53,7 @@ resumeButton.on(Events.MouseOut, function() {
     properties: {
       scale: 1
     },
-    curve: curveButton
+    curve: 'spring'
   });
 });
 resumeButton.on(Events.Click, function() {
@@ -110,7 +107,7 @@ guitarButton.on(Events.MouseOver, function() {
     properties: {
       scale: 1.2
     },
-    curve: curveButton
+    curve: 'spring'
   });
 });
 guitarButton.on(Events.MouseOut, function() {
@@ -118,7 +115,7 @@ guitarButton.on(Events.MouseOut, function() {
     properties: {
       scale: 1
     },
-    curve: curveButton
+    curve: 'spring'
   });
 });
 guitarButton.on(Events.Click, function() {
@@ -130,7 +127,7 @@ gameButton.on(Events.MouseOver, function() {
     properties: {
       scale: 1.2
     },
-    curve: curveButton
+    curve: 'spring'
   });
 });
 gameButton.on(Events.MouseOut, function() {
@@ -138,7 +135,7 @@ gameButton.on(Events.MouseOut, function() {
     properties: {
       scale: 1
     },
-    curve: curveButton
+    curve: 'spring'
   });
 });
 gameButton.on(Events.Click, function() {
@@ -151,7 +148,7 @@ blogButton.on(Events.MouseOver, function() {
     properties: {
       scale: 1.2
     },
-    curve: curveButton
+    curve: 'spring'
   });
 });
 blogButton.on(Events.MouseOut, function() {
@@ -159,7 +156,7 @@ blogButton.on(Events.MouseOut, function() {
     properties: {
       scale: 1
     },
-    curve: curveButton
+    curve: 'spring'
   });
 });
 blogButton.on(Events.Click, function() {

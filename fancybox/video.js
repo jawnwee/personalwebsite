@@ -7,8 +7,8 @@ jQuery(document).ready(function() {
 			'transitionIn'	: 'none',
 			'transitionOut'	: 'none',
 			'title'			: this.title,
-			'width'			: 250,
-			'height'		: 130,
+			'width'			: 500,
+			'height'		: 320,
 			'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
 			'type'			: 'swf',
 			'swf'			: {
